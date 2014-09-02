@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :products
 
+  root "products#index"
+
 #         Prefix Verb   URI Pattern                  Controller#Action
 #     products GET    /products(.:format)          products#index
 #              POST   /products(.:format)          products#create

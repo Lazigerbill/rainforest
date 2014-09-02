@@ -5,7 +5,9 @@
 <%= product.name %>
 <%= product.description %>
 <%= product.formatted_price %>
+<%= link_to "View", product_path(product.id) %>
 </br>
 <% end %>
 
+<%= link_to "Add new product", new_product_path %>
 </br>
